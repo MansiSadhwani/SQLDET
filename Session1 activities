@@ -1,0 +1,29 @@
+Create DATABASE Mansi_activities;
+
+use Mansi_activities;
+
+create table salesman (
+salesman_id int primary key,
+name varchar(32),
+city varchar(32),
+commission int);
+
+describe salesman;
+
+Insert into salesman values (5001, 'James Hoog','NewYork',15);
+
+Insert into salesman values (5002, 'Nail Knite','Paris',13),
+(5005, 'Pit Alex ','London',11),
+(5006, 'McLyon ','Paris',14),
+(5007, 'Paul Adam','Rome',13),
+(5003, 'Lauson Hen','San Jose',12)
+;
+
+Select * from salesman;
+
+Select salesman_id, city from salesman;
+
+Select * from salesman where city = 'Paris';
+
+Select salesman_id, commission from salesman where name = 'Paul Adam';
+
