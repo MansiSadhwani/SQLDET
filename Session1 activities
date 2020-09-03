@@ -1,3 +1,4 @@
+-- Activity 1
 Create DATABASE Mansi_activities;
 
 use Mansi_activities;
@@ -10,6 +11,8 @@ commission int);
 
 describe salesman;
 
+-- Activity 2
+
 Insert into salesman values (5001, 'James Hoog','NewYork',15);
 
 Insert into salesman values (5002, 'Nail Knite','Paris',13),
@@ -21,20 +24,26 @@ Insert into salesman values (5002, 'Nail Knite','Paris',13),
 
 Select * from salesman;
 
+-- Activity 3
 Select salesman_id, city from salesman;
 
 Select * from salesman where city = 'Paris';
 
 Select salesman_id, commission from salesman where name = 'Paul Adam';
 
+-- Activity 4
 Alter table salesman add Grade int;
 
-Alter table salesman drop DateOfBirth;
-Update salesman set DateOfBirth = '1985/09/01' where salesman_id = 5001;
-
-Update salesman set Grade = 1 where salesman_id = 5001;
+-- Alter table salesman drop DateOfBirth;
+-- Update salesman set DateOfBirth = '1985/09/01' where salesman_id = 5001;
+-- Update salesman set Grade = 1 where salesman_id = 5001;
 
 Update salesman set Grade = 100;
+
+Select * from salesman;
+
+-- Activity 5
+
 
 Update salesman set Grade = 200 where city = 'Rome';
 
@@ -43,6 +52,8 @@ Update salesman set Grade = 300 where name = 'James Hoog';
 Update salesman set name = 'Pierre' where name = 'McLyon ';
 
 Select * from salesman;
+
+-- Activity 6
 
 -- Create a table named orders
 create table orders(
